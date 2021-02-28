@@ -34,6 +34,11 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.19.jre7</version>
         </dependency>
+        <dependency>
+            <groupId>org.simplejavamail</groupId>
+            <artifactId>simple-java-mail</artifactId>
+            <version>6.5.0</version>
+        </dependency>
     </dependencies>
 
     <properties>
