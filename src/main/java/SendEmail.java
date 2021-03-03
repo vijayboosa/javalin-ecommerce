@@ -5,12 +5,12 @@ import org.simplejavamail.email.EmailBuilder;
 import org.simplejavamail.mailer.MailerBuilder;
 
 public class SendEmail {
-    public boolean Send(String message){
+    public boolean Send(String message, String toEmail){
         try {
             Email email = EmailBuilder.startingBlank()
-                    .to("res", "researchvkj@gmail.com")
+                    .to("res", toEmail)
                     .withSubject("hey")
-                    .withPlainText(message)
+                    .withHTMLText(message)
                     .withHeader("X-Priority", 5)
                     .from("researchvkj@gmail.com")
                     .buildEmail();
